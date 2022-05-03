@@ -12,11 +12,11 @@ do
   then
     recarmed = reaper.GetMediaTrackInfo_Value(is_selected, 'I_RECARM', 1)
     muted = reaper.GetMediaTrackInfo_Value(is_selected, 'B_MUTE', 1)
-    if ( recarmed == 1 and  muted == 1)
+    if ( recarmed == 1 and muted == 1)
     then
       reaper.SetMediaTrackInfo_Value(is_selected, 'I_RECARM', 0)
       reaper.SetMediaTrackInfo_Value(is_selected, 'B_MUTE', 0)
-    elseif ( recarmed == 0 and  muted == 0)
+    elseif ( recarmed == 0 and muted == 0)
     then
       reaper.SetMediaTrackInfo_Value(is_selected, 'B_MUTE', 1)
       reaper.SetMediaTrackInfo_Value(is_selected, 'I_RECARM', 1)
