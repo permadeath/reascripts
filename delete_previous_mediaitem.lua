@@ -1,6 +1,7 @@
 --[[ A simple script to delete the MediaItem before the currently selected
-    MediaItem.  If the selected MediaItem is the first in the track, that
-    one is deleted insted.]]--
+    MediaItem. If the selected MediaItem is the first in the track, that
+    one is deleted instead. Useful if you need to edit out lot of bits and
+    don't want to have to reach for your mouse.  Let us rejoice.]]--
 
 numSelItems = reaper.CountSelectedMediaItems(0)
 if (numSelItems == 1) then
